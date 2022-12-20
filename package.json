@@ -1,5 +1,5 @@
 {
-  "name": "harmony-ui",
+  "name": "@ps/ui",
   "private": true,
   "version": "0.0.1",
   "todo": "--- 1. fix yarn build hack, probably by upgrading storybook version --- 2. --- remove unnecessary dependencies ---",
