@@ -2,16 +2,16 @@
   "name": "harmony-ui",
   "private": true,
   "version": "0.0.1",
+  "todo": "--- 1. fix yarn build hack, probably by upgrading storybook version --- 2. --- remove unnecessary dependencies ---",
   "scripts": {
     "dev": "start-storybook -p 6006 -s public",
-    "build": "build-storybook -s public",
+    "build": "mv .git .xgit && build-storybook -s public && mv .xgit .git",
     "start": "serve storybook-static",
     "dev-app": "next dev",
-    "build-app": "build-storybook -s public && next build",
+    "build-app": "yarn build && next build",
     "start-app": "next start",
     "lint-app": "next lint"
   },
-  "--- PLEASE NOTE ---": "--- This project is experimental and unfinished. Still needs to be cleaned up and optimized. Many of these need to be deleted ---",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@emotion/css": "^11.10.5",
